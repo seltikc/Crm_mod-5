@@ -1,0 +1,14 @@
+.thead {
+    background-color: #f4f2ff;
+    color: #6e6893;;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c6c2de;
+    border-top: 1px solid #c6c2de;
+}
+
+.thead__row th {
+    text-align: left;
+    padding: 15px;
+}
+

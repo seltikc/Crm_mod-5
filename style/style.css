@@ -1,0 +1,15 @@
+@import "normalize.css";
+@import "global.css";
+@import "./modal/fonts.css";
+@import "./modal/modal.css";
+@import "./modal/form.css";
+@import "./modal/fieldset.css";
+@import "./modal/price.css";
+@import "./crm/crm.css";
+@import "./crm/button.css";
+@import "./crm/inner.css";
+@import "./crm/features.css";
+@import "./crm/table.css";
+@import "./crm/thead.css";
+@import "./crm/tbody.css";
+@import "./crm/footer.css";

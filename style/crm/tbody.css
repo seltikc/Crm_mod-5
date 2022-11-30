@@ -1,0 +1,55 @@
+.tbody {
+    text-transform: none;
+}
+
+.tr {
+    border-bottom: 1px solid #c6c2de;
+}
+
+.td {
+    padding: 13px 15px;
+}
+
+
+td:nth-child(n+4) {
+    text-align: center;
+}
+td:nth-child(8) .td__button {
+    background-image: url("../../image/line.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+td:nth-child(8) .td__btn {
+    background-image: url("../../image/carbon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+td:nth-child(9) .td__button {
+    background-image: url("../../image/edit.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+td:nth-child(10) .td__button {
+    background-image: url("../../image/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}

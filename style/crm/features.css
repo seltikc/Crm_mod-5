@@ -1,0 +1,127 @@
+.features {
+    display: grid;
+    grid-template-columns: 120px 1fr 181px;
+    margin-bottom: 15px;
+    column-gap: 20px;
+    padding: 0px 20px;
+}
+
+.features__filter {
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #c6c2de;
+    border-radius: 6px;
+    transition: 0.25s linear;
+}
+
+.features__filter:hover {
+    background-color: rgb(218, 216, 241);
+}
+
+.features__filter::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../image/filter.svg');
+    margin-right: 10px;
+}
+
+.features__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f2ff;
+    width: 392px;
+    padding-left: 10px;
+    gap: 10px;
+    border-radius: 6px;
+}
+
+.features__search {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../image/search.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 6px;
+}
+
+.features__input {
+    font-size: 12px;
+    height: 100%;
+    background-color: #f4f2ff;;
+    flex-grow: 1;
+    border-radius: 6px;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+
+.features__button {
+    font-size: 16px;
+    margin-right: 0px;
+    margin-left: auto;
+    transition: 0.25s linear;
+}
+
+.features__button:hover {
+    background-color: #897dc9;  
+}
+
+
+@media (max-width: 1100px) {
+    .features {
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+    .features__form {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .features__button {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .features__filter {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+@media (max-width: 920px) {
+    .features {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 20px;
+    }
+
+    .features__form {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    .features__button {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        width: 100%;
+    }
+
+    .features__filter {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+}
+
