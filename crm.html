@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="./script/crm.js"></script>
+    <script src="./script/crm.js" defer></script>
     <title>Crm</title>
 </head>
 <body>
@@ -255,10 +255,14 @@
         </div>
       </section>
     </div>
+
     <div class="container container-overlay container-overlay--active">
       <div class="overlay">
         <section class="modal">
-          <h2 class="modal__title">Добавить товар</h2>
+          <div class="modal__inner-flex">
+            <h2 class="modal__title">Добавить товар</h2>
+            <p class="modal__id">ID: 201910241</p>
+          </div>
           <button class="modal__close"></button>
           <form class="modal__form form" action="https://jsonplaceholder.typicode.com/posts">
 
